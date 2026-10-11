@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import ThemeToggle from "@/components/ThemeToggle";
 import LiveClock from "@/components/LiveClock";
+import FooterSignature from "@/components/FooterSignature";
 
 export const metadata: Metadata = {
   title: "Audience Retention & Long-Form Growth — Varshii ✨",
@@ -76,10 +77,7 @@ export default function LongFormGrowthPage() {
       <footer className="footer">
         <div className="footer-row">
           <LiveClock />
-          <span className="footer-sign is-visible" role="img" aria-label="Varsha Signature">
-            <img src="/sign-light.webp" alt="Varsha Rajput" className="sign-light-only" draggable={false} />
-            <img src="/sign-dark.webp" alt="Varsha Rajput" className="sign-dark-only" draggable={false} />
-          </span>
+          <FooterSignature />
         </div>
       </footer>
     </main>

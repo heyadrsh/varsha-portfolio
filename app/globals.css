@@ -446,17 +446,46 @@
   }
 }
 
-/* Varsha Handwritten Signature (Adaptive Light & Dark Modes) */
+/* Varsha Handwritten Signature (Adaptive Light & Dark Modes + Stroke Reveal Animation) */
 .footer-sign {
-  width: 64px !important;
-  height: 46px !important;
+  width: 68px !important;
+  height: 48px !important;
   color: var(--text-strong) !important;
-  clip-path: none !important;
   flex: none !important;
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
   position: relative !important;
+  cursor: pointer !important;
+  clip-path: inset(0 100% 0 0);
+  will-change: clip-path;
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+.footer-sign:hover {
+  transform: scale(1.05) !important;
+}
+
+/* Stroke drawing animation (revealing left to right like handwriting) */
+.footer-sign.is-visible,
+.footer-sign.is-animating {
+  animation: 1.6s cubic-bezier(0.65, 0, 0.35, 1) forwards footer-sign-draw !important;
+}
+
+@keyframes footer-sign-draw {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-sign {
+    clip-path: inset(0 0 0 0) !important;
+    animation: none !important;
+  }
 }
 
 .footer-sign img {
@@ -493,7 +522,7 @@
 
 @media (max-width: 720px) {
   .footer-sign {
-    width: 52px !important;
+    width: 54px !important;
     height: 38px !important;
   }
 }

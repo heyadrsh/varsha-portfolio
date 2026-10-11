@@ -4,6 +4,7 @@ import { useState } from "react";
 import ThemeToggle from "@/components/ThemeToggle";
 import TextScramble from "@/components/TextScramble";
 import LiveClock from "@/components/LiveClock";
+import FooterSignature from "@/components/FooterSignature";
 import CopyButton from "@/components/CopyButton";
 import DraggableCollage from "@/components/DraggableCollage";
 import ProofModal, { ProofModalData } from "@/components/ProofModal";
@@ -328,10 +329,7 @@ export default function Home() {
       <footer className="footer">
         <div className="footer-row">
           <LiveClock />
-          <span className="footer-sign is-visible" role="img" aria-label="Varsha Signature">
-            <img src="/sign-light.webp" alt="Varsha Rajput" className="sign-light-only" draggable={false} />
-            <img src="/sign-dark.webp" alt="Varsha Rajput" className="sign-dark-only" draggable={false} />
-          </span>
+          <FooterSignature />
         </div>
       </footer>
     </main>
