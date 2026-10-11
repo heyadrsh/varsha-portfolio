@@ -281,9 +281,9 @@ export default function DraggableCollage() {
           <DraggableSticker
             id="m-varsha-miranda"
             style={{
-              left: "24%",
+              left: "25%",
               top: "27%",
-              width: "52%",
+              width: "50%",
               transform: "rotate(calc(-2deg + var(--hover-nudge, 0deg)))",
               zIndex: 16,
             }}
@@ -308,7 +308,7 @@ export default function DraggableCollage() {
             id="m-youtube-studio"
             style={{
               left: "75%",
-              top: "38%",
+              top: "36%",
               width: "19%",
               transform: "rotate(calc(-8deg + var(--hover-nudge, 0deg)))",
               zIndex: 24,
@@ -316,13 +316,13 @@ export default function DraggableCollage() {
             lightSrc="/Collage/varsha/youtube-studio.webp"
           />
 
-          {/* Center Lower: Cat Illustration */}
+          {/* Right Side: Cat Illustration (non-overlapping) */}
           <DraggableSticker
             id="m-cat"
             style={{
-              left: "38%",
-              top: "58%",
-              width: "24%",
+              left: "76%",
+              top: "54%",
+              width: "22%",
               transform: "rotate(calc(4deg + var(--hover-nudge, 0deg)))",
               zIndex: 22,
             }}
