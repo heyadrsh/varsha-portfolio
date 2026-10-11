@@ -216,6 +216,19 @@ export default function DraggableCollage() {
             lightSrc="/Collage/Light mode/Leica.webp"
           />
 
+          {/* Pinterest Brand Sticker */}
+          <DraggableSticker
+            id="pinterest"
+            style={{
+              left: "64%",
+              top: "50%",
+              width: "7.5%",
+              transform: "rotate(calc(-8deg + var(--hover-nudge, 0deg)))",
+              zIndex: 25,
+            }}
+            lightSrc="/Collage/varsha/pinterest.svg"
+          />
+
           {/* Instagram Brand Sticker */}
           <DraggableSticker
             id="instagram"
@@ -295,12 +308,25 @@ export default function DraggableCollage() {
             id="m-instagram"
             style={{
               left: "4%",
-              top: "40%",
-              width: "20%",
+              top: "38%",
+              width: "18%",
               transform: "rotate(calc(10deg + var(--hover-nudge, 0deg)))",
               zIndex: 26,
             }}
             lightSrc="/Collage/varsha/instagram.webp"
+          />
+
+          {/* Middle Left: Pinterest Brand Sticker */}
+          <DraggableSticker
+            id="m-pinterest"
+            style={{
+              left: "4%",
+              top: "52%",
+              width: "18%",
+              transform: "rotate(calc(-8deg + var(--hover-nudge, 0deg)))",
+              zIndex: 25,
+            }}
+            lightSrc="/Collage/varsha/pinterest.svg"
           />
 
           {/* Middle Right: YouTube Studio Creator Badge */}
