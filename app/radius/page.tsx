@@ -4,7 +4,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 import LiveClock from "@/components/LiveClock";
 
 export const metadata: Metadata = {
-  title: "The 3-Second Hook — Varsha Rajput",
+  title: "The 3-Second Hook — Varshii ✨",
   description: "Hook architecture, pacing, and retention engineering in viral short-form video.",
 };
 

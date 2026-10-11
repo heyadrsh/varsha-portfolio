@@ -4,7 +4,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 import LiveClock from "@/components/LiveClock";
 
 export const metadata: Metadata = {
-  title: "Audience Retention & Long-Form Growth — Varsha Rajput",
+  title: "Audience Retention & Long-Form Growth — Varshii ✨",
   description: "Scaling YouTube channels from zero to 265K+ subscribers using data-backed retention strategies.",
 };
 

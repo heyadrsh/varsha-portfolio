@@ -2,11 +2,16 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Varsha Rajput — Social Media Strategist & Content Creator",
+  title: "Varshii ✨",
   description:
     "Social Media Manager, Content Creator, and Brand Strategist with 40M+ impressions across Instagram & Pinterest and 265K+ YouTube community.",
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
 };
 
