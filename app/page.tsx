@@ -325,11 +325,13 @@ export default function Home() {
       {/* Bottom Interactive Collage of Stickers */}
       <DraggableCollage />
 
-      {/* Footer */}
       <footer className="footer">
         <div className="footer-row">
           <LiveClock />
-          <span className="footer-sign is-visible" role="img" aria-label="Signature"></span>
+          <span className="footer-sign is-visible" role="img" aria-label="Varsha Signature">
+            <img src="/sign-light.webp" alt="Varsha Rajput" className="sign-light-only" draggable={false} />
+            <img src="/sign-dark.webp" alt="Varsha Rajput" className="sign-dark-only" draggable={false} />
+          </span>
         </div>
       </footer>
     </main>

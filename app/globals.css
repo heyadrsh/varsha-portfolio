@@ -446,22 +446,54 @@
   }
 }
 
-/* Varsha Signature Styling (1:1 Monogram) */
+/* Varsha Handwritten Signature (Adaptive Light & Dark Modes) */
 .footer-sign {
-  width: 44px !important;
-  height: 44px !important;
+  width: 64px !important;
+  height: 46px !important;
   color: var(--text-strong) !important;
-  clip-path: inset(0 100% 0 0);
-  background-color: currentColor !important;
+  clip-path: none !important;
   flex: none !important;
-  display: inline-block !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: relative !important;
+}
+
+.footer-sign img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  display: block !important;
+  pointer-events: none !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+}
+
+.footer-sign .sign-light-only {
+  display: block !important;
+}
+
+.footer-sign .sign-dark-only {
+  display: none !important;
+}
+
+[data-theme="dark"] .footer-sign .sign-light-only {
+  display: none !important;
+}
+
+[data-theme="dark"] .footer-sign .sign-dark-only {
+  display: block !important;
+}
+
+.footer-sign:empty {
+  background-color: currentColor !important;
   -webkit-mask: url(/sign.svg) center / contain no-repeat !important;
   mask: url(/sign.svg) center / contain no-repeat !important;
 }
 
 @media (max-width: 720px) {
   .footer-sign {
-    width: 38px !important;
+    width: 52px !important;
     height: 38px !important;
   }
 }
